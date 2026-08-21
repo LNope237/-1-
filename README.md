@@ -80,3 +80,5 @@
 ## 输出格式
 一个可直接部署的网站文件夹（index.html + styles.css + app.js）。
 三.结果网站展示
+见index.html
+经测试，利用js文件的导入导出可以实现电脑、手机互通
