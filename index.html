@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>史料笔记 · 三栏时光簿</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <header class="app-header">
+            <div class="brand">
+                <span class="brand-mark">▤</span>
+                <div>
+                    <h1>史料笔记</h1>
+                    <p class="brand-sub">时间 · 事件 · 感受</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="header-sync" role="group" aria-label="数据同步">
+                    <button class="btn btn-ghost btn-sm header-sync-btn" id="btnExport" title="导出当前数据为 JSON 文件，可在新设备导入">
+                        <span class="sync-icon">↓</span><span>导出</span>
+                    </button>
+                    <button class="btn btn-ghost btn-sm header-sync-btn" id="btnImport" title="从 JSON 文件导入数据（将覆盖当前）">
+                        <span class="sync-icon">↑</span><span>导入</span>
+                    </button>
+                </div>
+                <nav class="nav-tabs">
+                    <button class="nav-tab" data-page="notes">笔记</button>
+                    <button class="nav-tab" data-page="collections">合集</button>
+                </nav>
+            </div>
+        </header>
+
+        <main class="app-main" id="appMain"></main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
